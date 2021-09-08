@@ -1,0 +1,62 @@
+
+.firstPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+h3 {
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: lightgreen;
+    color: yellowgreen;
+    border-radius: 4px;
+    border: 2px solid lightgreen;
+    user-select: none;
+    font-family: Roboto, sans-serif,cursive;
+}
+.firstPagePhoto {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.secondPage {
+    transition: all 0.3s ease-in-out;
+    display: none;
+     
+}
+.birthdayGif {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,1);
+    animation-name: rotatePhoto;
+    animation-duration:  5s;
+    animation-timing-function:  linear;
+    animation-iteration-count:  infinite;
+    animation-fill-mode:  forwards; 
+    
+}
+@keyframes rotatePhoto {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+
+.dadPhoto {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0,0,0,1);
+    animation-name: tran;
+    animation-duration:  5s;
+    animation-timing-function:  linear;
+    animation-iteration-count:  infinite;
+    animation-fill-mode:  forwards; 
+}
+@keyframes tran {
+    from {transform: translateX(-300px);
+          transform: scale(0);
+    }
+    to {transform: translateX(300px);
+        transform: scale(0.8);
+    }}
